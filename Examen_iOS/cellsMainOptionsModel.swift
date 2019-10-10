@@ -9,14 +9,15 @@
 import Foundation
 
 
-struct optionsMainCells {
+class optionsMainCells {
     var title: String
-    var photo: String
+    var photo: String = "" //pending UI Photo in Cells only for aesthetics
     var isSelected: Bool = false
+    var index:Int
     
-    init(withTitle:String, photoPath:String) {
+    init(withTitle:String, withIndex:Int) {
         self.title = withTitle
-        self.photo = photoPath
+        self.index = withIndex
     }
     
 }

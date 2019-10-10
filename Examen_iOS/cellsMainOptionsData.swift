@@ -8,7 +8,8 @@
 
 import Foundation
 
-typealias dictionaryOfRowsInCells = [String:[String:String]]
+
+var objMainOptions = [optionsMainCells]()
 
 enum titlesCellsNames:String, CaseIterable {
     case camara = "Càmara"
@@ -19,21 +20,21 @@ enum titlesCellsNames:String, CaseIterable {
     case sexo = "Sexo(M/F)"
     case color = "Color favorito"
     
-    
 }
+
 func numberOfMainOptions() -> Int {
     return titlesCellsNames.allCases.count
 }
 
-func getDataForMainOptionsModel() -> [String:[String:String]]{
-    
-    var dictionaryTempTitles = [String:[String:String]]()
- 
+func getDataForMainOptionsModel() -> [optionsMainCells]{
+     
     for i in 0 ... titlesCellsNames.allCases.count - 1 {
         
-        dictionaryTempTitles["row"+String(i+1)] = ["title":titlesCellsNames.allCases[i].rawValue]
+        let instanceModelMainOptions = optionsMainCells.init(withTitle: titlesCellsNames.allCases[i].rawValue, withIndex: i)
+        
+        objMainOptions.append(instanceModelMainOptions)
+        
     }
-    
-    return dictionaryTempTitles
+    return objMainOptions
     
 }
