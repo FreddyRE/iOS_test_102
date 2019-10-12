@@ -11,12 +11,21 @@ import UIKit
 
 class optionsDetailCells{
     var title:String
-    init(withTitle:String){
+    var titleDescription:String
+    init(withTitle:String, titleDesc:String){
         self.title = withTitle
+        self.titleDescription = titleDesc
     }
     
-    func getElementsAdhoc(){
-        print(self.title)
+    func getSubViews(inCell:UITableViewCell){
+        switch self.title {
+        case String(describing: titlesCellsNames.camara):
+            let resview = optionPhoto().getImage(fromFileName: dataParamsForUIInSecondView.camara.rawValue)
+            resview.center = inCell.center
+            inCell.addSubview(resview)
+        default:
+            print("Aun no agregado")
+        }
     }
 }
 

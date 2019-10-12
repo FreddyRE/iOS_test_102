@@ -11,13 +11,15 @@ import UIKit
 
 struct optionsMainCells {
     var title: String
+    var titleDescription: String
     var photo: String = "" //pending UI Photo in Cells only for aesthetics
     var isSelected: Bool = false
     var index:Int
     
-    init(withTitle:String, withIndex:Int) {
+    init(withTitle:String, withIndex:Int, titleDesc:String) {
         self.title = withTitle
         self.index = withIndex
+        self.titleDescription = titleDesc
     }
     
 }

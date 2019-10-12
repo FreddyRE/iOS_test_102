@@ -18,17 +18,10 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "optionsCell2View", for: indexPath) as! inputsSecondViewTableViewCell
-        cell.titleCell2View.text = itemsSelectedFromFirstView[indexPath.row].title
+        cell.titleCell2View.text = itemsSelectedFromFirstView[indexPath.row].titleDescription
         
-        print(itemsSelectedFromFirstView[indexPath.row].getElementsAdhoc())
-        
-        /*let imageLoaded = optionPhoto().getImage(fromFileName: "cam.png")
-        imageLoaded.center = cell.center
-        cell.addSubview(imageLoaded)
-
-        let test1 = optionsDetailCells(withTitle: "ok").getElementsAdhoc()
-        print(test1)
- */
+        itemsSelectedFromFirstView[indexPath.row].getSubViews(inCell: cell)
+       
         return cell
     }
     
@@ -47,7 +40,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             for index in 0...firstData.count-1{
                 
                 if(firstData[index].isSelected){
-                    let newSelection = optionsDetailCells.init(withTitle: firstData[index].title)
+                    let newSelection = optionsDetailCells.init(withTitle: firstData[index].title, titleDesc: firstData[index].titleDescription )
                     itemsSelectedFromFirstView.append(newSelection)
                 }
                 

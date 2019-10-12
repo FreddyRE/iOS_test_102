@@ -8,4 +8,6 @@
 
 import Foundation
 
-
+enum dataParamsForUIInSecondView:String{
+    case camara = "cam.png"
+}

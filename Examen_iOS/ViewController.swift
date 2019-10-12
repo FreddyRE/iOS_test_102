@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if let dataRowGeneral = dataForTitlesAndImagesInCells{
             
-            cell.titleCell.text = dataRowGeneral[indexPath.row].title
+            cell.titleCell.text =  dataRowGeneral[indexPath.row].titleDescription
             
         }
             
