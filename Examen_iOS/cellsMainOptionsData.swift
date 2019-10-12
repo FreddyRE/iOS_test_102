@@ -30,6 +30,7 @@ func getDataForMainOptionsModel() -> [optionsMainCells]{
      
     for i in 0 ... titlesCellsNames.allCases.count - 1 {
         
+      
         let instanceModelMainOptions = optionsMainCells.init(withTitle: titlesCellsNames.allCases[i].rawValue, withIndex: i)
         
         objMainOptions.append(instanceModelMainOptions)

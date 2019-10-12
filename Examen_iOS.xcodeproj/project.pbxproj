@@ -16,6 +16,11 @@
 		2E3CB047234E71E3003067AF /* OptionsInRegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB046234E71E3003067AF /* OptionsInRegisterTableViewCell.swift */; };
 		2E3CB049234EE2DA003067AF /* cellsMainOptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB048234EE2DA003067AF /* cellsMainOptionsModel.swift */; };
 		2E3CB04B234F0253003067AF /* cellsMainOptionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB04A234F0253003067AF /* cellsMainOptionsData.swift */; };
+		2E3CB04D234F5033003067AF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB04C234F5033003067AF /* SecondViewController.swift */; };
+		2E3CB051234F949F003067AF /* inputsSecondViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB050234F949F003067AF /* inputsSecondViewTableViewCell.swift */; };
+		2E3CB0572351A4D3003067AF /* cam.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E3CB0562351A4D3003067AF /* cam.png */; };
+		2E3CB0592351C797003067AF /* cellsSecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB0582351C797003067AF /* cellsSecondViewModel.swift */; };
+		2E3CB05B2351C7F5003067AF /* cellsSecondViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB05A2351C7F5003067AF /* cellsSecondViewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		2E3CB046234E71E3003067AF /* OptionsInRegisterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsInRegisterTableViewCell.swift; sourceTree = "<group>"; };
 		2E3CB048234EE2DA003067AF /* cellsMainOptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellsMainOptionsModel.swift; sourceTree = "<group>"; };
 		2E3CB04A234F0253003067AF /* cellsMainOptionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellsMainOptionsData.swift; sourceTree = "<group>"; };
+		2E3CB04C234F5033003067AF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2E3CB050234F949F003067AF /* inputsSecondViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputsSecondViewTableViewCell.swift; sourceTree = "<group>"; };
+		2E3CB0562351A4D3003067AF /* cam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cam.png; path = ../../../Downloads/cam.png; sourceTree = "<group>"; };
+		2E3CB0582351C797003067AF /* cellsSecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellsSecondViewModel.swift; sourceTree = "<group>"; };
+		2E3CB05A2351C7F5003067AF /* cellsSecondViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellsSecondViewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +74,16 @@
 			children = (
 				2E3CB030234D9F36003067AF /* AppDelegate.swift */,
 				2E3CB032234D9F36003067AF /* SceneDelegate.swift */,
+				2E3CB046234E71E3003067AF /* OptionsInRegisterTableViewCell.swift */,
+				2E3CB050234F949F003067AF /* inputsSecondViewTableViewCell.swift */,
 				2E3CB034234D9F36003067AF /* ViewController.swift */,
+				2E3CB04C234F5033003067AF /* SecondViewController.swift */,
 				2E3CB048234EE2DA003067AF /* cellsMainOptionsModel.swift */,
 				2E3CB04A234F0253003067AF /* cellsMainOptionsData.swift */,
+				2E3CB05A2351C7F5003067AF /* cellsSecondViewData.swift */,
+				2E3CB0582351C797003067AF /* cellsSecondViewModel.swift */,
 				2E3CB036234D9F36003067AF /* Main.storyboard */,
-				2E3CB046234E71E3003067AF /* OptionsInRegisterTableViewCell.swift */,
+				2E3CB0562351A4D3003067AF /* cam.png */,
 				2E3CB039234D9F39003067AF /* Assets.xcassets */,
 				2E3CB03B234D9F39003067AF /* LaunchScreen.storyboard */,
 				2E3CB03E234D9F39003067AF /* Info.plist */,
@@ -135,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3CB03D234D9F39003067AF /* LaunchScreen.storyboard in Resources */,
+				2E3CB0572351A4D3003067AF /* cam.png in Resources */,
 				2E3CB03A234D9F39003067AF /* Assets.xcassets in Resources */,
 				2E3CB038234D9F36003067AF /* Main.storyboard in Resources */,
 			);
@@ -148,9 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3CB035234D9F36003067AF /* ViewController.swift in Sources */,
+				2E3CB051234F949F003067AF /* inputsSecondViewTableViewCell.swift in Sources */,
 				2E3CB031234D9F36003067AF /* AppDelegate.swift in Sources */,
 				2E3CB047234E71E3003067AF /* OptionsInRegisterTableViewCell.swift in Sources */,
 				2E3CB049234EE2DA003067AF /* cellsMainOptionsModel.swift in Sources */,
+				2E3CB0592351C797003067AF /* cellsSecondViewModel.swift in Sources */,
+				2E3CB05B2351C7F5003067AF /* cellsSecondViewData.swift in Sources */,
+				2E3CB04D234F5033003067AF /* SecondViewController.swift in Sources */,
 				2E3CB033234D9F36003067AF /* SceneDelegate.swift in Sources */,
 				2E3CB04B234F0253003067AF /* cellsMainOptionsData.swift in Sources */,
 			);

@@ -7,9 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
-
-class optionsMainCells {
+struct optionsMainCells {
     var title: String
     var photo: String = "" //pending UI Photo in Cells only for aesthetics
     var isSelected: Bool = false
@@ -21,8 +21,6 @@ class optionsMainCells {
     }
     
 }
-
-
 
 
 

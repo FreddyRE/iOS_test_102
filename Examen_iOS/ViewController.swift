@@ -59,10 +59,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func goToSecondView() {
-        print("Siguiente")
+        performSegue(withIdentifier: "segueToSecondView", sender: self)
     }
     func showSelectOneOptionMessage() {
-        print("selecciona una")
+        let alertSeleccionUnaOpcion = UIAlertController(title: "Selección de celda", message: "Favor de seleccionar al menos una celda", preferredStyle: .alert)
+        alertSeleccionUnaOpcion.addAction(UIAlertAction.init(title: "Ok", style: .default, handler: nil))
+        
+        self.present(alertSeleccionUnaOpcion, animated: true, completion: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secVC:SecondViewController = segue.destination as! SecondViewController
+        
+        secVC.dataFromFirstVC = dataForTitlesAndImagesInCells
+        
     }
 
     override func viewDidLoad() {
