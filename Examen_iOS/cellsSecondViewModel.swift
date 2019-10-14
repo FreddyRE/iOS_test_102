@@ -20,18 +20,36 @@ class optionsDetailCells{
     func getSubViews(inCell:UITableViewCell){
         switch self.title {
         case String(describing: titlesCellsNames.camara):
-            let resview = optionPhoto().getImage(fromFileName: dataParamsForUIInSecondView.camara.rawValue)
+            let resview = optionCamera().getImage(fromFileName: cameraDataSVUI["imgIcon"] as! String)
             resview.center = inCell.center
             inCell.addSubview(resview)
+        case String(describing: titlesCellsNames.foto):
+            inCell.imageView?.image = dataLoaded1
+        case String(describing: titlesCellsNames.nombre_Completo):
+            let res = optionTextInput().getTxtField()
+            res.center.x = inCell.center.x
+            res.center.y = inCell.center.y
+            inCell.addSubview(res)
+        case String(describing: titlesCellsNames.telefono):
+            let res = optionTextInput().getTxtField()
+            res.center.x = inCell.center.x
+            res.center.y = inCell.center.y
+            inCell.addSubview(res)
+            
+        case String(describing: titlesCellsNames.nacimiento):
+            let res: UIDatePicker = optionDatePicker().getPicker()
+            inCell.addSubview(res)
         default:
             print("Aun no agregado")
         }
     }
 }
 
-class optionPhoto {
+
+
+struct optionCamera {
     
-    let img : UIImageView = UIImageView(frame: CGRect(x: 0,y: 0,width: 50,height: 50))
+    let img : UIImageView = UIImageView(frame: CGRect(x: cameraDataSVUI["positionX"] as! Int,y: cameraDataSVUI["positionY"] as! Int,width: cameraDataSVUI["width"] as! Int,height: cameraDataSVUI["height"] as! Int))
     
     func getImage(fromFileName:String)-> UIImageView{
         self.img.image = UIImage(named: fromFileName)
@@ -39,5 +57,25 @@ class optionPhoto {
     }
 }
 
+struct optionTextInput {
+    let txtInput: UITextField =  UITextField(frame: CGRect(x: 0, y: 0, width: 250, height: 50))
+
+    
+    func getTxtField()-> UITextField{
+        self.txtInput.borderStyle = .line
+        return self.txtInput
+    }
+}
+
+struct optionDatePicker {
+    let datePicker: UIDatePicker = UIDatePicker()
+    
+    func getPicker() -> UIDatePicker {
+        self.datePicker.frame = CGRect(x: 10, y: 50, width: UIScreen.main.bounds.width, height: 100)
+        self.datePicker.timeZone = NSTimeZone.local
+        return self.datePicker
+    }
+   
+}
 
 

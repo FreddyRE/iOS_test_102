@@ -9,13 +9,26 @@
 import UIKit
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+    
+    var refreshCtrl: UIRefreshControl!
+    var tableData:[AnyObject]!
+    var task: URLSessionDownloadTask!
+    var session: URLSession!
+    var cache:NSCache<AnyObject, AnyObject>!
+    
+    
+    
+    
+    
     var itemsSelectedFromFirstView = [optionsDetailCells]()
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemsSelectedFromFirstView.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "optionsCell2View", for: indexPath) as! inputsSecondViewTableViewCell
         cell.titleCell2View.text = itemsSelectedFromFirstView[indexPath.row].titleDescription
@@ -47,13 +60,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
-    
-   
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
         verifyCellsSelected()
-        // Do any additional setup after loading the view.
+        
     }
     
     

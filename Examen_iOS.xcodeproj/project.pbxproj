@@ -21,6 +21,7 @@
 		2E3CB0572351A4D3003067AF /* cam.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E3CB0562351A4D3003067AF /* cam.png */; };
 		2E3CB0592351C797003067AF /* cellsSecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB0582351C797003067AF /* cellsSecondViewModel.swift */; };
 		2E3CB05B2351C7F5003067AF /* cellsSecondViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB05A2351C7F5003067AF /* cellsSecondViewData.swift */; };
+		2E3CB05F2353FD35003067AF /* extensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CB05E2353FD35003067AF /* extensionUIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2E3CB0562351A4D3003067AF /* cam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cam.png; path = ../../../Downloads/cam.png; sourceTree = "<group>"; };
 		2E3CB0582351C797003067AF /* cellsSecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellsSecondViewModel.swift; sourceTree = "<group>"; };
 		2E3CB05A2351C7F5003067AF /* cellsSecondViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellsSecondViewData.swift; sourceTree = "<group>"; };
+		2E3CB05E2353FD35003067AF /* extensionUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				2E3CB050234F949F003067AF /* inputsSecondViewTableViewCell.swift */,
 				2E3CB034234D9F36003067AF /* ViewController.swift */,
 				2E3CB04C234F5033003067AF /* SecondViewController.swift */,
+				2E3CB05E2353FD35003067AF /* extensionUIImageView.swift */,
 				2E3CB048234EE2DA003067AF /* cellsMainOptionsModel.swift */,
 				2E3CB04A234F0253003067AF /* cellsMainOptionsData.swift */,
 				2E3CB05A2351C7F5003067AF /* cellsSecondViewData.swift */,
@@ -171,6 +174,7 @@
 				2E3CB0592351C797003067AF /* cellsSecondViewModel.swift in Sources */,
 				2E3CB05B2351C7F5003067AF /* cellsSecondViewData.swift in Sources */,
 				2E3CB04D234F5033003067AF /* SecondViewController.swift in Sources */,
+				2E3CB05F2353FD35003067AF /* extensionUIImageView.swift in Sources */,
 				2E3CB033234D9F36003067AF /* SceneDelegate.swift in Sources */,
 				2E3CB04B234F0253003067AF /* cellsMainOptionsData.swift in Sources */,
 			);

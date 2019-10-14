@@ -11,6 +11,7 @@ import UIKit
 var dataForTitlesAndImagesInCells:[optionsMainCells]?
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return numberOfMainOptions()
@@ -57,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
     }
-    
+
     func goToSecondView() {
         performSegue(withIdentifier: "segueToSecondView", sender: self)
     }
@@ -79,7 +80,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let imgDownloadFromURL = UIImageView()
+        imgDownloadFromURL.loadImage(urlString: photoDataSVUI["urlToGetImg"]!)
+        
         dataForTitlesAndImagesInCells = getDataForMainOptionsModel()
+        
         
         // Do any additional setup after loading the view.
             
